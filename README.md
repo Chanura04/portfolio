@@ -9,11 +9,14 @@ A modern, responsive portfolio website showcasing AI and Data Science projects.
 - 🚀 Fast loading and optimized performance
 - 🎯 Clean, organized project showcase
 - 💼 Professional presentation of skills and experience
+- 🔍 **Interactive project detail modals** - Click any project to see full details
+- 📊 **Comprehensive project information** - Features, technical highlights, outcomes
+- 🖼️ **Screenshot placeholders** - Ready for your project visuals
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (with custom animations)
+- CSS3 (with custom animations and modal system)
 - JavaScript (Vanilla)
 - Google Fonts (Playfair Display & DM Sans)
 
@@ -85,6 +88,20 @@ For a cleaner URL (`https://chanura04.github.io/`):
 ### Update Projects
 Edit the project cards in `index.html` under the `<!-- Projects Section -->` to add or modify projects.
 
+### Add Project Screenshots
+See the `SCREENSHOTS_GUIDE.md` file for detailed instructions on adding images to your project detail pages. In brief:
+1. Create an `images/` folder
+2. Add your project screenshots
+3. Update the image paths in `script.js` in the `projectDetails` object
+
+### Update Project Details
+Edit the `projectDetails` object in `script.js` to customize:
+- Project descriptions
+- Features list
+- Technical highlights
+- Outcomes and metrics
+- GitHub links
+
 ### Change Colors
 Modify CSS variables in `styles.css`:
 ```css
@@ -104,10 +121,25 @@ Edit the contact links in the `<!-- Contact Section -->` of `index.html`.
 portfolio/
 │
 ├── index.html          # Main HTML file
-├── styles.css          # Stylesheet
-├── script.js           # JavaScript interactions
-└── README.md          # This file
+├── styles.css          # Stylesheet with modal styles
+├── script.js           # JavaScript interactions and project details
+├── README.md          # This file
+└── SCREENSHOTS_GUIDE.md  # Guide for adding project images
 ```
+
+## How It Works
+
+### Project Detail Modals
+- Click any project card to open a detailed modal view
+- Each modal includes:
+  - Full project description
+  - Key features and capabilities
+  - Technical implementation highlights
+  - Outcomes and impact metrics
+  - Screenshot placeholders (ready for your images)
+  - Direct GitHub link
+- Press ESC or click outside to close
+- Fully responsive on mobile devices
 
 ## Browser Support
 

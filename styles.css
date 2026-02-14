@@ -477,6 +477,209 @@ section {
     color: var(--text-muted);
 }
 
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 8, 20, 0.95);
+    animation: fadeIn 0.3s ease;
+    overflow-y: auto;
+}
+
+.modal.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: var(--bg);
+    margin: 2rem auto;
+    max-width: 1000px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    animation: slideUp 0.4s ease;
+    position: relative;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    padding: 2rem 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-close {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.project-detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.project-detail-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-detail-tag {
+    background: var(--secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--accent);
+    border: 1px solid var(--border);
+}
+
+.project-detail-section {
+    margin-bottom: 3rem;
+}
+
+.project-detail-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.project-detail-section p,
+.project-detail-section li {
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.project-detail-section ul {
+    margin-left: 1.5rem;
+}
+
+.project-detail-section li {
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.project-btn-primary:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(74, 158, 255, 0.3);
+}
+
+.project-btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.project-btn-secondary:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.screenshot-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.screenshot-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--card-bg) 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.screenshot-caption {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
@@ -511,6 +714,23 @@ section {
     .container {
         padding: 0 1.5rem;
     }
+    
+    .modal-content {
+        margin: 1rem;
+        border-radius: 12px;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .project-detail-title {
+        font-size: 2rem;
+    }
+    
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -522,5 +742,9 @@ section {
     
     .nav-container {
         padding: 1rem 1.5rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
     }
 }
