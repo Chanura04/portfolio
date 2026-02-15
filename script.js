@@ -101,7 +101,51 @@ const projectDetails = {
             "Achieved 99.5% pipeline reliability through automated monitoring",
             "Enabled real-time insights for community trend analysis"
         ],
-        github: "https://github.com/Chanura04/ai-stack-exchange-analyser.git"
+        github: "https://github.com/Chanura04/ai-stack-exchange-analyser.git",
+        media: [
+        {
+            type: "video",
+            path: "https://www.youtube.com/embed/xYIdiGGgboo",
+            caption: "Full System Demonstration"
+        },
+        {
+            type: "video",
+            path: "https://www.youtube.com/embed/4EoIlkwag2k",
+            caption: "Deployment Workflow with GitHub Actions"
+        },
+        {
+            type: "image",
+            path: "images/project1/img_1.png",
+            caption: "Dashboard Architecture"
+        },
+        {
+            type: "image",
+            path: "images/project1/img_2.png",
+            caption: "Asserts Architecture "
+        }
+        ,
+        {
+            type: "image",
+            path: "images/project1/img_3.png",
+            caption: "Databricks Dag Results"
+        }
+         ,
+        {
+            type: "image",
+            path: "images/project1/img_4.png",
+            caption: "Save Data to S3 Bucket Dag Results"
+        },
+        {
+            type: "image",
+            path: "images/project1/img_5.png",
+            caption: "Final Dashboard Results"
+        },
+        {
+            type: "image",
+            path: "images/project1/img_6.png",
+            caption: "Set up S3 Bucket Policy for Airflow"
+        }
+    ]
     },
     project2: {
         title: "AI Search Agent",
@@ -128,9 +172,22 @@ const projectDetails = {
             "Successfully balanced factual data with community insights",
             "Processed 1000+ queries with consistent citation accuracy"
         ],
-        github: "https://github.com/Chanura04/AI-Search-Agent.git"
+        github: "https://github.com/Chanura04/AI-Search-Agent.git",
+        media: [
+            {
+                type: "video",
+                // path: "videos/project2/search_agent.mp4",
+                path: "https://www.youtube.com/embed/5eb6b6wb-Jk",
+                caption: "Full System Demonstration"
+            },
+            {
+                type: "image",
+                path: "images/project2/image.png",
+                caption: "Nodes Architecture"
+            },
+        ]
     },
-    project3: {
+    project3: {       
         title: "Multi-Model Brain Tumor Detection System",
         tags: ["Python", "TensorFlow", "OpenCV", "Scikit-learn", "Pandas", "Deep Learning"],
         overview: "Leading the development of an AI-driven system for detecting and classifying brain tumors using MRI and CT scans. The system enhances diagnostic accuracy beyond single-modality approaches by leveraging multi-model ensemble techniques and advanced image processing.",
@@ -146,17 +203,37 @@ const projectDetails = {
             "Implemented custom CNN architectures for medical imaging",
             "Applied data augmentation for limited medical dataset",
             "Used OpenCV for advanced image preprocessing",
-            "Built ensemble methods combining multiple model predictions",
             "Integrated Grad-CAM for model interpretability"
         ],
         outcomes: [
             "Achieved over 90% accuracy in tumor detection",
-            "Reduced false positive rate by 35% through ensemble methods",
-            "Provided segmentation masks with 88% IoU score",
+            "Provided segmentation masks with 99% IoU score",
             "Successfully tested on diverse dataset of 5000+ scans"
         ],
         status: "Ongoing - Group Project Leader",
-        github: "https://github.com/Chanura04/DSGP-Brain-Tumor-Detection.git"
+        github: "https://github.com/Chanura04/DSGP-Brain-Tumor-Detection.git",
+        media: [
+            {
+                type: "video",
+                path: "videos/project3/demo.mp4",
+                caption: "Full System Demonstration"
+            },
+            {
+                type: "image",
+                path: "images/project3/seg_acc_curve.png",
+                caption: "Segmentation Accuracy Curve"
+            },
+            {
+                type: "image",
+                path: "images/project3/seg_train_curve.png",
+                caption: "Segmentation Training Curve"
+            },
+            {
+                type: "image",
+                path: "images/project3/seg_mertics.png",
+                caption: "Segmentation Metrics"
+            }
+        ]
     },
     project4: {
         title: "PDF-RAG Document Question Answering System",
@@ -174,8 +251,7 @@ const projectDetails = {
             "Built RESTful API with FastAPI for document operations",
             "Implemented efficient vector storage and retrieval",
             "Designed prompt templates for accurate context extraction",
-            "Integrated Inngest for event-driven workflows",
-            "Containerized entire application with Docker"
+            "Integrated Inngest for event-driven workflows"
         ],
         outcomes: [
             "Successfully processed 500+ PDF documents",
@@ -183,7 +259,24 @@ const projectDetails = {
             "Reduced query response time to under 2 seconds",
             "Enabled multi-document cross-referencing capabilities"
         ],
-        github: "https://github.com/Chanura04/PDF-RAG-APPLICATION.git"
+        github: "https://github.com/Chanura04/PDF-RAG-APPLICATION.git",
+        media: [
+            {
+                type: "video",
+                path: "https://www.youtube.com/embed/kq1CdeekXIA",
+                caption: "Full System Demonstration"
+            },
+            {
+                type: "image",
+                path: "images/project4/img_1.png",
+                caption: "System"
+            },
+            {
+                type: "image",  
+                path: "images/project4/img_2.png",
+                caption: "PDF Ingestion Workflow"
+            },
+        ]
     },
     project5: {
         title: "Telco Customer Churn Prediction System",
@@ -199,8 +292,8 @@ const projectDetails = {
         ],
         technicalHighlights: [
             "Implemented custom neural network with Keras",
-            "Applied SMOTE for handling class imbalance",
-            "Built automated hyperparameter tuning pipeline",
+            "Applied class weights for handling class imbalance",
+            "Manually tuned hyperparameters for optimal performance",
             "Tracked 50+ experiments with MLflow",
             "Created feature importance analysis"
         ],
@@ -210,35 +303,58 @@ const projectDetails = {
             "Enabled proactive retention campaigns",
             "Reduced customer churn by 22% in pilot program"
         ],
-        github: "https://github.com/Chanura04/churn-prediction.git"
+        github: "https://github.com/Chanura04/churn-prediction.git",
+        media: [
+            {
+                type: "image",
+                path: "images/project5/img_1.png",
+                caption: "MLflow Experiment Tracking Dashboard"
+            },
+            {
+                type: "image",
+                path: "images/project5/img_2.png",
+                caption: "Model Metrics Comparison"
+            },
+            {
+                type: "image",
+                path: "images/project5/img_3.png",
+                caption: "Model Training Curves"
+            },
+            {
+                type: "image",
+                path: "images/project5/img_4.png",
+                caption: "Model Training Curves"
+            },
+
+        ]
     },
-    project6: {
-        title: "Academic Research Paper Recommendation System",
-        tags: ["Python", "MongoDB", "SQLite", "arXiv API", "NLP", "SentenceTransformers", "Llama3-70b"],
-        overview: "Developed an intelligent pipeline to scrape 10,000+ papers from the arXiv API, storing raw metadata in MongoDB and processed embeddings in SQLite. Leveraged sentence-transformers to generate high-dimensional vector representations of paper content, enabling semantically accurate recommendations.",
-        features: [
-            "Automated paper scraping from arXiv API",
-            "Dual database architecture (MongoDB + SQLite)",
-            "Semantic vector embeddings with SentenceTransformers",
-            "Content-based recommendation engine",
-            "Recency-weighted ranking algorithm",
-            "Interactive search and filtering interface"
-        ],
-        technicalHighlights: [
-            "Built efficient ETL pipeline for research papers",
-            "Implemented hybrid storage strategy for metadata and vectors",
-            "Generated 768-dimensional embeddings for semantic search",
-            "Designed ranking algorithm combining relevance and recency",
-            "Integrated Llama3-70b for paper summarization"
-        ],
-        outcomes: [
-            "Successfully indexed 10,000+ research papers",
-            "Achieved 88% recommendation relevance score",
-            "Reduced paper discovery time by 65%",
-            "Built scalable system for continuous paper ingestion"
-        ],
-        github: "https://github.com/Chanura04/-Academic-Research-Paper-Recommender.git"
-    }
+    // project6: {
+    //     title: "Academic Research Paper Recommendation System",
+    //     tags: ["Python", "MongoDB", "SQLite", "arXiv API", "NLP", "SentenceTransformers", "Llama3-70b"],
+    //     overview: "Developed an intelligent pipeline to scrape 10,000+ papers from the arXiv API, storing raw metadata in MongoDB and processed embeddings in SQLite. Leveraged sentence-transformers to generate high-dimensional vector representations of paper content, enabling semantically accurate recommendations.",
+    //     features: [
+    //         "Automated paper scraping from arXiv API",
+    //         "Dual database architecture (MongoDB + SQLite)",
+    //         "Semantic vector embeddings with SentenceTransformers",
+    //         "Content-based recommendation engine",
+    //         "Recency-weighted ranking algorithm",
+    //         "Interactive search and filtering interface"
+    //     ],
+    //     technicalHighlights: [
+    //         "Built efficient ETL pipeline for research papers",
+    //         "Implemented hybrid storage strategy for metadata and vectors",
+    //         "Generated 768-dimensional embeddings for semantic search",
+    //         "Designed ranking algorithm combining relevance and recency",
+    //         "Integrated Llama3-70b for paper summarization"
+    //     ],
+    //     outcomes: [
+    //         "Successfully indexed 10,000+ research papers",
+    //         "Achieved 88% recommendation relevance score",
+    //         "Reduced paper discovery time by 65%",
+    //         "Built scalable system for continuous paper ingestion"
+    //     ],
+    //     github: "https://github.com/Chanura04/-Academic-Research-Paper-Recommender.git"
+    // }
 };
 
 // Open Project Detail Modal
@@ -289,27 +405,27 @@ function openProjectDetail(projectId) {
         </div>
         ` : ''}
 
+        ${project.media ? `
         <div class="project-detail-section">
-            <h3>Screenshots & Visuals</h3>
+            <h3>Screenshots & Demonstrations</h3>
             <div class="screenshot-grid">
-                <div class="screenshot-item">
-                    <div class="screenshot-placeholder">Architecture Diagram</div>
-                    <p class="screenshot-caption">Add your architecture diagram here</p>
-                </div>
-                <div class="screenshot-item">
-                    <div class="screenshot-placeholder">UI Screenshot</div>
-                    <p class="screenshot-caption">Add application interface screenshot</p>
-                </div>
-                <div class="screenshot-item">
-                    <div class="screenshot-placeholder">Results/Metrics</div>
-                    <p class="screenshot-caption">Add performance metrics visualization</p>
-                </div>
+                ${project.media.map(item => `
+                    <div class="screenshot-item">
+                        ${item.type === 'video' ? `
+                            <iframe width="560" height="315"
+                                    src="${item.path}"
+                                    frameborder="0" allowfullscreen>
+                            </iframe>
+
+                        `  : `
+                            <img src="${item.path}" alt="${item.caption}" style="width: 100%; border-radius: 8px; border: 1px solid var(--border); ">
+                        `}
+                        <p class="screenshot-caption">${item.caption}</p>
+                    </div>
+                `).join('')}
             </div>
-            <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
-                <strong>Note:</strong> Replace the placeholder screenshots above with your actual project images. 
-                You can add them to an "images" folder and update the paths in the JavaScript file.
-            </p>
         </div>
+        ` : ''}
 
         <div class="project-links">
             <a href="${project.github}" target="_blank" class="project-btn project-btn-primary">
