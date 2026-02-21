@@ -140,11 +140,7 @@ const projectDetails = {
             path: "images/project1/img_4.png",
             caption: "Save Data to S3 Bucket Dag Results"
         },
-        {
-            type: "image",
-            path: "images/project1/img_5.png",
-            caption: "Final Dashboard Results"
-        },
+        
         {
             type: "image",
             path: "images/project1/img_6.png",
