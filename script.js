@@ -115,6 +115,11 @@ const projectDetails = {
         },
         {
             type: "image",
+            path: "images/project1/img_7.png",
+            caption: "Dashboard Results with Community Insights"
+        },
+        {
+            type: "image",
             path: "images/project1/img_1.png",
             caption: "Dashboard Architecture"
         },
