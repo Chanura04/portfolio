@@ -120,7 +120,7 @@ const projectDetails = {
         },
         {
             type: "image",
-            path: "images/project1/img_1.png",
+            path: "images/project1/img_11.png",
             caption: "Dashboard Architecture"
         },
         {
